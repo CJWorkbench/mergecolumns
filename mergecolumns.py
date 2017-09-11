@@ -19,5 +19,5 @@ class Importable:
 
         wf_module.set_ready(notify=False)
 
-        table[newcol] = table[firstcol, secondcol].apply(lambda x: delimiter.join([str(i) for i in x if str(i) != 'nan']), axis=1)
+        table[newcol] = table[[firstcol, secondcol]].apply(lambda x: delimiter.join([str(i) for i in x if str(i) != 'nan']), axis=1)
         return table
