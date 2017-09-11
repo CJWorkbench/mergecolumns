@@ -1,0 +1,31 @@
+{
+  "name": "Merge columns",
+  "id_name": "mergecolumns",
+  "category" : "Wrangle",
+  "description": "Merges two columns into one and optionally inserts a delimiter between them.",
+  "icon": "wrangle",
+  "parameters": [
+    {
+      "name": "First column to merge",
+      "id_name": "firstcolumn",
+      "type": "column",
+      "ui-only": true
+    },
+    {
+      "name": "Second column to merge",
+      "id_name": "secondcolumn",
+      "type": "column",
+      "visible": true
+    },
+    {
+      "name": "Delimiter",
+      "id_name": "delimiter",
+      "type": "string"
+    },
+    {
+      "name": "New Column",
+      "id_name" : "newcolumn",
+      "type": "string"
+    }
+  ]
+}
