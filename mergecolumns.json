@@ -1,8 +1,8 @@
 {
   "name": "Merge columns",
   "id_name": "mergecolumns",
-  "category" : "Wrangle",
-  "description": "Merges two columns into one and optionally inserts a delimiter between them.",
+  "category" : "Analyse",
+  "description": "Merge two columns into one.",
   "icon": "wrangle",
   "parameters": [
     {
