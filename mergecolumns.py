@@ -14,7 +14,7 @@ class Importable:
         delimiter = wf_module.get_param_string('delimiter')
         newcol = wf_module.get_param_string('newcolumn')
 
-        if firstcol == '' or secondcol == '':
+        if firstcol == '' or secondcol == '' or newcol == '':
             return table
 
         wf_module.set_ready(notify=False)
