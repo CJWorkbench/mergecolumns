@@ -6,13 +6,13 @@
   "icon": "wrangle",
   "parameters": [
     {
-      "name": "First column to merge",
+      "name": "First column",
       "id_name": "firstcolumn",
       "type": "column",
       "ui-only": true
     },
     {
-      "name": "Second column to merge",
+      "name": "Second column",
       "id_name": "secondcolumn",
       "type": "column",
       "visible": true
