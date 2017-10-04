@@ -23,7 +23,7 @@
       "type": "string"
     },
     {
-      "name": "New Column",
+      "name": "New column name",
       "id_name" : "newcolumn",
       "type": "string"
     }
