@@ -25,7 +25,8 @@
     {
       "name": "New column name",
       "id_name" : "newcolumn",
-      "type": "string"
+      "type": "string",
+      "default":"New column"
     }
   ]
 }
