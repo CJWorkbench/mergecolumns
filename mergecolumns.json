@@ -20,7 +20,9 @@
     {
       "name": "Delimiter",
       "id_name": "delimiter",
-      "type": "string"
+      "type": "string",
+      "default":"-"
+
     },
     {
       "name": "New column name",
