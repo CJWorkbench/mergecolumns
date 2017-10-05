@@ -25,7 +25,7 @@
 
     },
     {
-      "name": "New column name",
+      "name": "Merged column name",
       "id_name" : "newcolumn",
       "type": "string",
       "default":"New column"
