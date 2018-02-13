@@ -1,7 +1,7 @@
 {
   "name": "Merge columns",
   "id_name": "mergecolumns",
-  "category" : "Analyse",
+  "category" : "Prepare",
   "description": "Merge two columns into one.",
   "icon": "wrangle",
   "help_url":"modules/analyse/merge-columns",
