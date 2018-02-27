@@ -4,7 +4,7 @@
   "category" : "Prepare",
   "description": "Merge two columns into one.",
   "icon": "wrangle",
-  "help_url":"modules/analyse/merge-columns",
+  "help_url":"modules/prepare/merge-columns",
   "parameters": [
     {
       "name": "First column",
