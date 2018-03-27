@@ -1,10 +1,10 @@
 {
   "name": "Merge columns",
   "id_name": "mergecolumns",
-  "category" : "Prepare",
+  "category" : "Clean",
   "description": "Merge two columns into one.",
   "icon": "wrangle",
-  "help_url":"modules/prepare/merge-columns",
+  "help_url":"modules/clean/merge-columns",
   "parameters": [
     {
       "name": "First column",
