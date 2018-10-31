@@ -3,7 +3,7 @@
   "id_name": "mergecolumns",
   "category" : "Clean",
   "description": "Merge two columns into one.",
-  "icon": "wrangle",
+  "icon": "merge",
   "help_url":"modules/clean/merge-columns",
   "parameters": [
     {
