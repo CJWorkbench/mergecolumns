@@ -1,0 +1,21 @@
+id_name: mergecolumns
+name: Merge columns
+category: Clean
+description: Concatenate the text in two columns.
+icon: merge
+help_url: modules/clean/merge-columns
+parameters:
+- id_name: firstcolumn
+  type: column
+  name: First column
+- id_name: secondcolumn
+  type: column
+  name: Second column
+- id_name: delimiter
+  type: string
+  name: Delimiter
+  default: '-'
+- id_name: newcolumn
+  type: string
+  name: Merged column name
+  default: New column
