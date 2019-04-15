@@ -8,9 +8,11 @@ parameters:
 - id_name: firstcolumn
   type: column
   name: First column
+  column_types: [ text ]
 - id_name: secondcolumn
   type: column
   name: Second column
+  column_types: [ text ]
 - id_name: delimiter
   type: string
   name: Delimiter
