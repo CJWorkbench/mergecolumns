@@ -1,7 +1,7 @@
 id_name: mergecolumns
 name: Merge columns
 category: Clean
-description: Concatenate the text in two columns.
+description: Concatenate the text from two columns.
 icon: merge
 help_url: modules/clean/merge-columns
 parameters:
