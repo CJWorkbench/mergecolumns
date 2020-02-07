@@ -1,0 +1,32 @@
+#. default-message: Merge columns
+msgid "_spec.name"
+msgstr ""
+
+#. default-message: Concatenate the text from two columns.
+msgid "_spec.description"
+msgstr ""
+
+#. default-message: First column
+msgid "_spec.parameters.firstcolumn.name"
+msgstr ""
+
+#. default-message: Second column
+msgid "_spec.parameters.secondcolumn.name"
+msgstr ""
+
+#. default-message: Delimiter
+msgid "_spec.parameters.delimiter.name"
+msgstr ""
+
+#. default-message: -
+msgid "_spec.parameters.delimiter.default"
+msgstr ""
+
+#. default-message: Merged column name
+msgid "_spec.parameters.newcolumn.name"
+msgstr ""
+
+#. default-message: New column
+msgid "_spec.parameters.newcolumn.default"
+msgstr ""
+
