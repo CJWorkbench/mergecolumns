@@ -5,13 +5,9 @@ description: Concatenate the text from two columns.
 icon: merge
 help_url: modules/clean/merge-columns
 parameters:
-- id_name: firstcolumn
-  type: column
-  name: First column
-  column_types: [ text ]
-- id_name: secondcolumn
-  type: column
-  name: Second column
+- id_name: columns
+  type: multicolumn
+  name: ''
   column_types: [ text ]
 - id_name: delimiter
   type: string

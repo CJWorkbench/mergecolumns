@@ -1,33 +1,57 @@
+from functools import partial, reduce
 import numpy as np
+import pandas as pd
+
+
+def merge2(delimiter: str, s1: pd.Series, s2: pd.Series) -> pd.Series:
+    """Elementwise return `{s1}{delimiter}{s2}`.
+
+    Omit nulls.
+    """
+    na1 = s1.isnull()
+    na2 = s2.isnull()
+
+    # Convert to str, always
+    if hasattr(s1, 'cat'):
+        s1 = s1.astype(str)
+        s1[na1] = np.nan
+    if hasattr(s2, 'cat'):
+        s2 = s2.astype(str)
+        s2[na2] = np.nan
+
+    result = s1 + delimiter + s2  # invalid when na1 | na2
+    result[na1] = s2
+    result[na2] = s1
+    # Now results[na1 | na2] are valid
+    return result
 
 
 def render(table, params):
     if table is None:
         return None
     
-    firstcol = params['firstcolumn']
-    secondcol = params['secondcolumn']
+    colnames = params['columns']
     delimiter = params['delimiter']
-    newcol = params['newcolumn']
+    newcolname = params['newcolumn']
 
-    if not firstcol or not secondcol or not newcol:
+    if not colnames or not newcolname:
         return table
 
-    col1 = table[firstcol]
-    col2 = table[secondcol]
-    na1 = col1.isnull()
-    na2 = col2.isnull()
+    columns = [table[c] for c in colnames]
+    result = reduce(partial(merge2, delimiter), columns)
 
-    if hasattr(col1, 'cat'):
-        col1 = col1.astype(str)
-        col1[na1] = np.nan
-    if hasattr(col2, 'cat'):
-        col2 = col2.astype(str)
-        col2[na2] = np.nan
-
-    result = col1 + delimiter  # np.nan in col1 will stay na
-    result[na1 & ~na2] = '' # so we can add col2 when it is not nan
-    result[~na2] += col2
-
-    table[newcol] = result
+    table[newcolname] = result
     return table
+
+
+def _migrate_params_v0_to_v1(params):
+    return dict(
+        columns=[n for n in (params['firstcolumn'], params['secondcolumn']) if n],
+        delimiter=params['delimiter'],
+        newcolumn=params['newcolumn'],
+    )
+
+def migrate_params(params):
+    if 'firstcolumn' in params:
+        params = _migrate_params_v0_to_v1(params)
+    return params

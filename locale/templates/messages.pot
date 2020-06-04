@@ -6,14 +6,6 @@ msgstr ""
 msgid "_spec.description"
 msgstr ""
 
-#. default-message: First column
-msgid "_spec.parameters.firstcolumn.name"
-msgstr ""
-
-#. default-message: Second column
-msgid "_spec.parameters.secondcolumn.name"
-msgstr ""
-
 #. default-message: Delimiter
 msgid "_spec.parameters.delimiter.name"
 msgstr ""

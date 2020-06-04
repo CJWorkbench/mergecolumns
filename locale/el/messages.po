@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-02-18 15:56+0000\n"
+"POT-Creation-Date: 2020-06-04 13:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: el\n"
@@ -24,12 +24,6 @@ msgstr "Συγχώνευση στηλών"
 
 msgid "_spec.description"
 msgstr "Συνένωση του κειμένου από δύο στήλες."
-
-msgid "_spec.parameters.firstcolumn.name"
-msgstr "Πρώτη στήλη"
-
-msgid "_spec.parameters.secondcolumn.name"
-msgstr "Δεύτερη στήλη"
 
 msgid "_spec.parameters.delimiter.name"
 msgstr "Διαχωριστικό"
